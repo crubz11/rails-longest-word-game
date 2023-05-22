@@ -58,3 +58,13 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+
+.label {
+  font-weight: bold;
+  justify-content: center;
+  margin: 20px;
+}
+
+.label-form {
+  text-align: center;
+}
