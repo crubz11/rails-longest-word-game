@@ -12,7 +12,7 @@ class GamesController < ApplicationController
     @grid = params[:letters]
     word_check_url = "https://wagon-dictionary.herokuapp.com/#{@input}"
     @word_check = JSON.parse(URI.open(word_check_url).read)
-    @word_found = @word_check["found"]
+    @word_found = @word_check['found']
 
     word_chars = @input.downcase.chars
     grid_chars = @grid
