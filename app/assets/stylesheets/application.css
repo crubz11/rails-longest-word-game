@@ -15,11 +15,22 @@
  */
 
 .letters {
+  display: flex;
   font-size: 36px;
   font-weight: bold;
-  text-align: center;
+  justify-content: center;
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+.letter {
+  width: 75px;
+  border: solid 3px #2774a9;
+  background-color: #3498dc;
+  margin: 5px;
+  padding: 2px;
+  color: white;
+  text-align: center;
 }
 
 h1 {

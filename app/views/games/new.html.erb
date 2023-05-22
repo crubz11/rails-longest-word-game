@@ -1,9 +1,14 @@
 <h1 class="title">New Game</h1>
-<h3 class="letters"> <%= @letters %>
-</h3>
+
+<div class="letters">
+  <% @letters.each do |letter| %>
+    <p class="letter"><%= letter %></p>
+  <% end %>
+</div>
 
 <div class="row">
-  <div class="mx-auto my-2 col-2">
+  <div class="mx-auto my-2 col-3">
+    <label for="form">What is the longest word you can find?</label>
     <form action="/score" method="POST" data-turbo="false" class="input-group">
       <input type="hidden" name="letters" value="<%= @letters %>">
       <input type="text" name="input" class="text-input">
