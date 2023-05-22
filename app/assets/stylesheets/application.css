@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+.letters {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background-color: bisque;
+}
+
+.text-input {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}

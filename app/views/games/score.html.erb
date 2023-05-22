@@ -1,0 +1,13 @@
+<h1 class="title">Results</h1>
+<h3 class="result"><% if !@include %>
+      <%=@message = "No Points, \"#{@input}\" cant be built out of \"#{@grid}\""%>
+    <% elsif !@word_found%>
+      <%=@message = "No Points, \"#{@input}\" is not an English word."%>
+    <% else %>
+      <%=@message = "Good job! Your word was: \"#{@input}\" Your score was: #{@score}"%>
+    <% end %>
+</h3>
+
+<div class="text-center">
+  <a href="http://localhost:3000/new" class="btn btn-light my-2">Play again</a>
+</div>
